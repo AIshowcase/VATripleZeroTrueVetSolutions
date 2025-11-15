@@ -1,9 +1,9 @@
-CTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Broker Direct Lending & True Vet Solutions | VA Triple Zero Loan</title>
+    <title>Broker Direct Lending & TrueVet Solutions | VA Triple Zero Loan</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,6 +53,18 @@ CTYPE html>
             background-color: white;
             border: 1px solid #ddd;
             border-top: 4px solid #1b95e0; /* bdl-accent */
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        /* New style for partner review card */
+        .partner-review-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-top: 4px solid #1c3d5a; /* TVS Dark Blue */
             padding: 24px;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -112,7 +124,7 @@ CTYPE html>
 
         <!-- 1. HEADER & HERO -->
         <header class="text-center mb-12">
-            <!-- *** NEW: Co-Branded Logo Header *** -->
+            <!-- Co-Branded Logo Header -->
             <div class="flex justify-center items-center gap-4 md:gap-8 mb-4">
                 <img src="https://static.wixstatic.com/media/af6b41_bdf94869aa154feb869ce5e0a0068dfd~mv2.png/v1/fill/w_244,h_168,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LOGO%20transparent.png" alt="Broker Direct Lending Logo" class="h-16 md:h-20">
                 <span class="text-4xl md:text-5xl font-thin text-gray-400">+</span>
@@ -120,12 +132,51 @@ CTYPE html>
             </div>
             <p class="text-lg text-bdl-blue font-semibold">A Partnership to Honor Your Service</p>
             
-            <!-- *** NEW: Customized Hero Copy *** -->
-            <h1 class="text-4xl md:text-6xl font-extrabold text-bdl-blue mt-8 mb-3">Attention True Vet Solutions Clients: Buy a Home with $0 Down & $0 Closing Costs.</h1>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-bdl-blue mt-8 mb-3">Attention TrueVet Solutions Clients: Buy a Home with ZERO Down & ZERO Closing Costs.</h1>
             <p class="text-xl md:text-2xl text-bdl-dark max-w-3xl mx-auto">
-                <strong>You are exempt from the VA Funding Fee</strong> 
+                 
             </p>
         </header>
+
+        <!-- *** NEW: Suggestion 1 - "Two-Halves of the $0" Diagram *** -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl mb-12 border-t-4 border-bdl-gold">
+            <h2 class="text-3xl font-bold text-center text-bdl-blue mb-6">The Two Costs of a VA Loan (And How We Eliminate Both)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Cost 1: Funding Fee -->
+                <div class="bg-green-50 border-2 border-green-600 rounded-lg p-6 text-center shadow-lg">
+                    <h3 class="text-2xl font-bold text-green-800">COST 1: The VA Funding Fee</h3>
+                    <p class="text-lg font-semibold text-gray-700">(Approx. 2.15% or <span class="font-bold text-green-700">$10,750*</span>)</p>
+                    <div class="bg-green-600 text-white text-xl font-bold py-3 px-6 rounded-lg mt-4 inline-block">
+                        STATUS: COMPLETED
+                    </div>
+                    <p class="text-sm text-gray-600 mt-3">(Thanks to your service & TrueVet Solutions)</p>
+                </div>
+                <!-- Cost 2: Closing Costs -->
+                <div class="bg-yellow-50 border-2 border-bdl-gold rounded-lg p-6 text-center shadow-lg animate-pulse">
+                    <h3 class="text-2xl font-bold text-bdl-blue">COST 2: The Closing Costs</h3>
+                    <p class="text-lg font-semibold text-gray-700">(Approx. 2.0% or <span class="font-bold text-bdl-blue">$10,000*</span>)</p>
+                    <div class="bg-bdl-gold text-bdl-blue text-xl font-bold py-3 px-6 rounded-lg mt-4 inline-block">
+                        STATUS: PENDING
+                    </div>
+                    <p class="text-sm text-gray-600 mt-3">(Click below to claim your credits)</p>
+                </div>
+            </div>
+            <p class="text-center text-sm text-bdl-dark opacity-75 mt-4">
+                * example based on $500,000 purchase price
+            </p>
+        </div>
+
+        <!-- *** NEW: Suggestion 3 - Video Placeholder *** -->
+        <div class="mb-12">
+            <div class="bg-bdl-dark rounded-2xl shadow-xl p-10 text-center flex flex-col items-center justify-center aspect-video">
+                <svg class="w-16 h-16 text-bdl-gold" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                </svg>
+                <h3 class="text-2xl text-white font-bold mt-4">Partnership Video Placeholder</h3>
+                <p class="text-gray-300">A 30-second video here bridges the trust gap instantly.</p>
+            </div>
+        </div>
 
         <!-- Trust Block -->
         <div class="max-w-xl mx-auto p-4 rounded-lg mb-8">
@@ -194,12 +245,11 @@ CTYPE html>
 
         <!-- 4. How It Works Section (The "Mechanism") -->
         <div class="mt-16 pt-10 border-t-2 border-bdl-accent">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-bdl-blue mb-4">The new standard of the VA home loan</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-bdl-blue mb-4">How You Get a True $0 Loan</h2>
             <p class="text-center text-lg text-bdl-dark max-w-3xl mx-auto mb-10">
-                The VA Triple Zero Home Loan program has no down payment, no closing costs and no funding fee. 
+                You get two layers of savings: our **$0 Closing Cost** program, plus your **$0 Funding Fee** waiver from the VA.
             </p>
 
-            <!-- *** UPDATED: How it Works Diagram *** -->
             <div class="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-xl">
                 <div class="text-center space-y-4">
                     <!-- Layer 1: Out-of-Pocket Savings -->
@@ -240,9 +290,35 @@ CTYPE html>
             </div>
         </div>
 
+        <!-- *** NEW: Suggestion 2 - "Double-Sided" Social Proof *** -->
+        <div class="mt-20 pt-16 border-t-2 border-bdl-accent">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-bdl-blue mb-6">Why Veterans Trust True Vet Solutions</h2>
+            <p class="text-center text-lg text-bdl-dark max-w-3xl mx-auto mb-12">
+                We've partnered with the best because you deserve the best.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- TVS Review 1 -->
+                <div class="partner-review-card">
+                    <div class="review-card-content mb-4">
+                        <div class="stars text-xl mb-3">★★★★★</div>
+                        <p class="text-bdl-dark italic">“Outstanding service, they walked me thru the whole process from beginning to end and stayed in constant contact with me. I am beyond thankful to have been referred to them. Thank you.”</p>
+                    </div>
+                    <p class="font-bold text-bdl-dark">- Gerardo Cabrera (TVS Client)</p>
+                </div>
+                <!-- TVS Review 2 (Placeholder) -->
+                <div class="partner-review-card">
+                    <div class="review-card-content mb-4">
+                        <div class="stars text-xl mb-3">★★★★★</div>
+                        <p class="text-bdl-dark italic">"TrueVet Solutions is dedicated to helping every veteran maximize their benefits. Our expert team guides you every step of the way to secure the benefits you're entitled to."</p>
+                    </div>
+                    <p class="font-bold text-bdl-dark">- True Vet Solutions Mission</p>
+                </div>
+            </div>
+        </div>
+
         <!-- 5. SOCIAL PROOF (BDL Reviews) -->
         <div class="mt-20 pt-16 border-t-2 border-bdl-accent">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-bdl-blue mb-12">Hear From Our Happy Homeowners</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-bdl-blue mb-12">Why Our Homebuyers Trust Us</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Review 1 -->
                 <div class="review-card">
@@ -281,9 +357,8 @@ CTYPE html>
         <div class="mt-20 pt-16 border-t-2 border-bdl-accent">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-bdl-blue mb-4">See The Math For Yourself</h2>
             <p class="text-center text-lg text-bdl-dark max-w-3xl mx-auto mb-10">
-                Enter a sample sales price to see your estimated closing cost credit.
+                Enter a sample sales price to see your estimated savings.
             </p>
-            <!-- *** UPDATED: Calculator Section *** -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 bg-white p-6 md:p-10 rounded-2xl shadow-2xl">
                 
                 <!-- Left Side: Inputs -->
@@ -336,12 +411,12 @@ CTYPE html>
                         <p class="text-md font-semibold opacity-90">Buyer Agent .05% commission share</p>
                         <div class="text-3xl font-extrabold" id="agentCreditResult">$2,500</div>
                     </div>
-                    <!-- *** UPDATED: Total Out-of-Pocket Credit *** -->
+                    <!-- Total Out-of-Pocket Credit -->
                     <div class="result-box-total w-full text-center p-5 rounded-xl text-bdl-blue shadow-lg mt-2 mb-3">
-                        <p class="text-lg font-bold opacity-90">Total Closing Cost Credits</p>
+                        <p class="text-lg font-bold opacity-90">Total $0 Out-of-Pocket Credit</p>
                         <div class="text-4xl font-extrabold" id="totalCreditResult">$10,000</div>
                     </div>
-                    <!-- *** NEW: Funding Fee Savings (Bonus) *** -->
+                    <!-- Funding Fee Savings (Bonus) -->
                     <div class="result-box-bonus w-full text-center p-5 rounded-xl shadow-lg mt-2">
                         <p class="text-lg font-bold opacity-90 text-blue-200">BONUS: VA Funding Fee Savings</p>
                         <div class="text-4xl font-extrabold" id="fundingFeeResult">$10,750</div>
@@ -350,10 +425,10 @@ CTYPE html>
             </div>
         </div>
 
-        <!-- 7. Explanation Section (The "Why Us") -->
+        <!-- 7. *** UPDATED: Suggestion 5 - Reverted to original diagram *** -->
         <div class="mt-16 pt-10 border-t-2 border-bdl-accent">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-bdl-blue mb-12">
-                Why Us? The "Wholesale Advantage"
+                Why Do We Pay Your Costs? (The "Wholesale Advantage")
             </h2>
 
             <!-- Comparison Grid -->
@@ -444,7 +519,7 @@ CTYPE html>
             </div>
         </div>
 
-        <!-- 9. *** UPDATED: FAQ Section *** -->
+        <!-- 9. FAQ Section -->
         <div class="mt-20 pt-16 border-t-2 border-bdl-accent">
             <h2 class="text-3xl md:text-4xl font-bold text-center text-bdl-blue mb-4">Frequently Asked Questions</h2>
             <p class="text-center text-lg text-bdl-dark max-w-3xl mx-auto mb-12">
@@ -452,7 +527,7 @@ CTYPE html>
             </p>
             <div class="max-w-3xl mx-auto">
                 
-                <!-- *** NEW: TVS-Specific Question 1 *** -->
+                <!-- TVS-Specific Question 1 -->
                 <details class="faq-item">
                     <summary class="faq-question">
                         I'm a TrueVet Solutions client. Am I guaranteed to qualify?
@@ -467,7 +542,7 @@ CTYPE html>
                     </div>
                 </details>
                 
-                <!-- *** NEW: TVS-Specific Question 2 *** -->
+                <!-- TVS-Specific Question 2 -->
                 <details class="faq-item">
                     <summary class="faq-question">
                         Why are you partnered with TrueVet Solutions?
@@ -496,8 +571,6 @@ CTYPE html>
                     </div>
                 </details>
                 
-                <!-- *** REMOVED: "What if I'm exempt..." question *** -->
-
                 <details class="faq-item">
                     <summary class="faq-question">
                         Can I use this program to buy any home?
@@ -617,14 +690,14 @@ CTYPE html>
             // Result boxes in calculator
             const lenderCreditResultEl = document.getElementById('lenderCreditResult');
             const agentCreditResultEl = document.getElementById('agentCreditResult');
-            const fundingFeeResultEl = document.getElementById('fundingFeeResult'); // New
-            const totalCreditResultEl = document.getElementById('totalCreditResult'); // Updated
+            const fundingFeeResultEl = document.getElementById('fundingFeeResult'); 
+            const totalCreditResultEl = document.getElementById('totalCreditResult'); 
             
             // "How it works" diagram elements
             const howBrokerCreditEl = document.getElementById('howBrokerCredit');
             const howAgentCreditEl = document.getElementById('howAgentCredit');
-            const howFundingFeeEl = document.getElementById('howFundingFee'); // New
-            const howTotalCreditEl = document.getElementById('howTotalCredit'); // Updated
+            const howFundingFeeEl = document.getElementById('howFundingFee'); 
+            const howTotalCreditEl = document.getElementById('howTotalCredit'); 
 
             // Reusable currency formatter
             const currencyFormatter = (value, showCents = false) => {
@@ -646,22 +719,22 @@ CTYPE html>
                 // Calculate All 3 Savings
                 const lenderCredit = loanAmount * 0.015;  // 1.5%
                 const agentCredit = salesPrice * 0.005;   // 0.5%
-                const totalClosingCredit = lenderCredit + agentCredit; // Updated Total
-                const fundingFeeSavings = loanAmount * 0.0215; // 2.15% (New)
+                const totalClosingCredit = lenderCredit + agentCredit; 
+                const fundingFeeSavings = loanAmount * 0.0215; // 2.15%
 
                 // --- Update Calculator UI (Section 6) ---
                 loanAmountEl.value = loanAmount.toLocaleString('en-US', { maximumFractionDigits: 0 });
                 
                 lenderCreditResultEl.innerText = currencyFormatter(lenderCredit);
                 agentCreditResultEl.innerText = currencyFormatter(agentCredit);
-                totalCreditResultEl.innerText = currencyFormatter(totalClosingCredit); // Updated
-                fundingFeeResultEl.innerText = currencyFormatter(fundingFeeSavings); // New
+                totalCreditResultEl.innerText = currencyFormatter(totalClosingCredit); 
+                fundingFeeResultEl.innerText = currencyFormatter(fundingFeeSavings); 
                 
                 // --- Update "How it Works" Diagram UI (Section 4) ---
                 howBrokerCreditEl.innerText = currencyFormatter(lenderCredit);
                 howAgentCreditEl.innerText = currencyFormatter(agentCredit);
-                howTotalCreditEl.innerText = currencyFormatter(totalClosingCredit); // Updated
-                howFundingFeeEl.innerText = currencyFormatter(fundingFeeSavings); // New
+                howTotalCreditEl.innerText = currencyFormatter(totalClosingCredit); 
+                howFundingFeeEl.innerText = currencyFormatter(fundingFeeSavings); 
             }
 
             // Add event listener
