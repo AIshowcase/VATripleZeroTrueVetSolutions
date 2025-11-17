@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations! Here's Your Next Step</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- *** WIX OPTIMIZATION SCRIPT *** -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.min.js"></script>
+    
+    <!-- Configure Tailwind with Brand Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bdl-blue': '#0a2c4e', 
+                        'bdl-accent': '#1b95e0',
+                        'bdl-gold': '#f5b841', 
+                        'bdl-gray': '#f4f4f4', 
+                        'bdl-dark': '#333333'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333333; /* bdl-dark */
+        }
+        .review-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-top: 4px solid #1b95e0; /* bdl-accent */
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .review-card-content { flex-grow: 1; }
+        .stars { color: #f5b841; /* bdl-gold */ }
 
+        .cta-step {
+            background-color: white;
+            border: 1px solid #e5e7eb;
+            border-top: 4px solid #f5b841; /* bdl-gold */
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        .cta-primary {
+            background-color: #f5b841; /* bdl-gold */
+            color: #0a2c4e; /* bdl-blue */
+            font-weight: 700;
+            font-size: 1.125rem;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(245, 184, 65, 0.4);
+            transition: all 0.2s ease;
+        }
+        .cta-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(245, 184, 65, 0.5);
+        }
+        .cta-secondary {
+            background-color: transparent;
+            color: #1b95e0; /* bdl-accent */
+            border: 2px solid #1b95e0;
+            font-weight: 700;
+            font-size: 1.125rem;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        .cta-secondary:hover {
+            background-color: #1b95e0;
+            color: white;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-bdl-gray">
+
+    <!-- Container -->
+    <div class="container mx-auto max-w-4xl p-5 md:p-10">
+
+        <!-- 1. HEADER (Consistent Branding) -->
+        <header class="text-center mb-12">
+            <div class="flex justify-center items-center gap-4 md:gap-8 mb-4">
+                <img src="https://static.wixstatic.com/media/af6b41_bdf94869aa154feb869ce5e0a0068dfd~mv2.png/v1/fill/w_244,h_168,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LOGO%20transparent.png" alt="Broker Direct Lending Logo" class="h-16 md:h-20">
+                <span class="text-4xl md:text-5xl font-thin text-gray-400">+</span>
+                <img src="https://cdn-kmjod.nitrocdn.com/mwgIBUiFHBZJTgKSxfacusojmRXezPRT/assets/images/optimized/rev-4565216/truevetsolutions.com/wp-content/uploads/2025/08/TVSMC@2x-400x83.png" alt="True Vet Solutions Logo" class="h-20 md:h-24">
+            </div>
+        </header>
+
+        <!-- 2. CONGRATULATIONS & NEXT STEPS -->
+        <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12 text-center border-t-8 border-bdl-gold">
+            
+            <h1 class="text-4xl md:text-5xl font-extrabold text-bdl-blue mb-2">Congratulations!</h1>
+            <p class="text-2xl md:text-3xl font-semibold text-bdl-dark mb-4">You're a Perfect Candidate.</p>
+            <p class="text-xl text-bdl-dark max-w-2xl mx-auto mb-10">
+                Your answers show you're a prime candidate for the <strong class="font-semibold">VA Triple Zero</strong> home loan program. You've taken the first step—let's get you pre-approved.
+            </p>
+
+            <!-- TWO-STEP CTA BLOCK -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- STEP 1: BOOK CALL (Primary) -->
+                <div class="cta-step flex flex-col items-center">
+                    <div class="flex items-center justify-center w-16 h-16 bg-bdl-blue text-white text-3xl font-bold rounded-full mb-4 shadow-lg">1</div>
+                    <h2 class="text-2xl font-bold text-bdl-blue mb-3">Book Your Call</h2>
+                    <p class="text-bdl-dark mb-6 text-center">This is the most important step. Let's lock in a 15-minute slot to confirm your numbers and plan your $0 closing.</p>
+                    <a href="[YOUR-CALENDLY-LINK-HERE]" target="_top" class="cta-primary">
+                        Book Your Call Now
+                    </a>
+                </div>
+
+                <!-- STEP 2: GET HEAD START (Secondary) -->
+                <div class="cta-step flex flex-col items-center">
+                    <div class="flex items-center justify-center w-16 h-16 bg-bdl-accent text-white text-3xl font-bold rounded-full mb-4 shadow-lg">2</div>
+                    <h2 class="text-2xl font-bold text-bdl-blue mb-3">Before the Call</h2>
+                    <p class="text-bdl-dark mb-6 text-center">To make our call <em class="italic">even faster</em>, you can fill out the online application now. This lets me pull your <strong class="font-semibold">Certificate of Eligibility (COE)</strong> <em class="italic">before</em> we talk.</p>
+                    <a href="https://www.blink.mortgage/app/signup/partner/brokerdirectlending/marcusjohnson?campaign=smooth" target="_top" class="cta-secondary">
+                        Start Application
+                    </a>
+                    <p class="text-sm text-bdl-dark opacity-75 mt-3">Still No hard credit pull</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 3. REASSURANCE / SOCIAL PROOF -->
+        <div class="mt-16">
+            <h2 class="text-3xl font-bold text-center text-bdl-blue mb-8">You're in great hands.</h2>
+            <div class="review-card max-w-2xl mx-auto">
+                <div class="review-card-content mb-4">
+                    <div class="stars text-xl mb-3">★★★★★</div>
+                    <p class="text-bdl-dark italic text-lg">"As a first-time homebuyer, I feel incredibly lucky to have been referred to Marcus and his team. From start to finish, Marcus was nothing short of exceptional. He's a true professional... He kept us informed every step of the way & was always there to answer questions."</p>
+                </div>
+                <p class="font-bold text-bdl-dark">- Amber M.</p>
+            </div>
+        </div>
+
+
+        <!-- 4. Footer -->
+        <footer class="text-center mt-20 pt-10 border-t border-gray-300">
+            <div class="flex-col items-center justify-center text-center">
+                <span class="text-3xl font-extrabold text-bdl-blue">BROKER DIRECT</span>
+                <span class="text-3xl font-extrabold text-bdl-accent ml-1">LENDING</span>
+            </div>
+            <p class="text-xl text-bdl-dark mt-4">Marcus Johnson | Broker/Owner | NMLS #372256</p>
+            <p class="text-lg text-bdl-accent font-semibold mt-2">(916) 827-0087 | marcus@brokerdirectlending.com</p>
+            <p class="text-sm text-gray-500 mt-6">© 2024 Broker Direct Lending. NMLS# 1616086 CA DRE# 02029610</p>
+        </footer>
+    </div>
+
+</body>
+</html>
